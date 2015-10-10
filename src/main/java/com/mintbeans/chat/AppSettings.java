@@ -23,6 +23,7 @@ public class AppSettings {
 		String exchange;
 		String queue;
 
+		Integer maxConnections;
 		Integer maxConcurrentConsumers;
 	}
 

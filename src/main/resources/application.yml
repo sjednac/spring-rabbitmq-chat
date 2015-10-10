@@ -9,4 +9,9 @@ app.settings:
     exchange: chat.E.fanout.dev.Message
     queue: chat.Q.dev.MessageSubscriber.Message
 
+    maxConnections: 10
     maxConcurrentConsumers: 5
+
+logging:
+  level:
+    org.springframework.amqp.rabbit.core.RabbitTemplate: INFO
