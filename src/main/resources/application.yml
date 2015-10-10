@@ -1,0 +1,12 @@
+app.settings:
+  indentJson: true
+  rabbit:
+    host: 192.168.99.100
+    port: 5672
+    user: test
+    pass: qwerty
+
+    exchange: chat.E.fanout.dev.Message
+    queue: chat.Q.dev.MessageSubscriber.Message
+
+    maxConcurrentConsumers: 5
