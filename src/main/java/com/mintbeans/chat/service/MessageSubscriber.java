@@ -16,7 +16,7 @@ public class MessageSubscriber {
 	@RabbitListener(queues = "#{appSettings.rabbit.queue}")
 	public void onMessage(Message message) {
 		final int ordinal = counter.incrementAndGet();
-		log.info("Message {} received: {}", ordinal, message);
+		log.debug("Message {} received: {}", ordinal, message);
 	}
 
 }

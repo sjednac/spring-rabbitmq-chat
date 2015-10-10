@@ -15,3 +15,6 @@ app.settings:
 logging:
   level:
     org.springframework.amqp.rabbit.core.RabbitTemplate: INFO
+    com.mintbeans.chat.service:
+      MessagePublisher: INFO
+      MessageSubscriber: DEBUG
