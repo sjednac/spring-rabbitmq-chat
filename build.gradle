@@ -33,6 +33,10 @@ dependencies {
     testCompile 'org.springframework.boot:spring-boot-starter-test'
 }
 
+run {
+    standardInput = System.in
+}
+
 task wrapper(type: Wrapper) {
     gradleVersion = '2.7'
 }
