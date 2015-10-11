@@ -33,6 +33,7 @@ dependencies {
 
 run {
     standardInput = System.in
+    systemProperties = System.properties
 }
 
 task wrapper(type: Wrapper) {
