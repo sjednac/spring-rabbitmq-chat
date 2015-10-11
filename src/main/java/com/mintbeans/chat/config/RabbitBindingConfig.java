@@ -32,7 +32,7 @@ public class RabbitBindingConfig {
 	@Bean
 	@Autowired
 	public Queue queue(AppSettings settings, RabbitAdmin rabbitAdmin) {
-		final Queue queue = new Queue(settings.getRabbit().getQueue(), true);
+		final Queue queue = new Queue(settings.getRabbit().getQueue(), true, true, true);
 
 		log.info("Declaring queue: {}", queue.getName());
 		rabbitAdmin.declareQueue(queue);
