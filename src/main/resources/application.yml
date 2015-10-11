@@ -12,9 +12,12 @@ app.settings:
     maxConnections: 10
     maxConcurrentConsumers: 5
 
+spring:
+  profiles.active: cli
+
 logging:
   level:
     org.springframework.amqp.rabbit.core.RabbitTemplate: INFO
     com.mintbeans.chat.service:
       MessagePublisher: INFO
-      MessageSubscriber: DEBUG
+      MessageSubscriber: INFO
